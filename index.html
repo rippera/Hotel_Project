@@ -9,6 +9,7 @@
     <link rel="icon" href="img/logo.png">
 </head>
 <body>
+    <div class="gotop" id="gotop"><a href="#top">&#60</a></div>
 <section class="main-section">
     <div class="container">
         <header class="header">
@@ -22,10 +23,10 @@
                 </div>
                 <nav class="nav">
                     <ul class="nav-ul d-flex">
-                        <li class="nav-li"><a href="#">უპირატესობები</a></li>
-                        <li class="nav-li"><a href="#">ფუნქციონალი</a></li>
-                        <li class="nav-li"><a href="#">ფასები</a></li>
-                        <li class="nav-li"><a href="#">დაგვიკავშირდით</a></li>
+                        <li class="nav-li"><a href="#advantage-sec">უპირატესობები</a></li>
+                        <li class="nav-li"><a href="#func-sec">ფუნქციონალი</a></li>
+                        <li class="nav-li active"><a href="#">ფასები</a></li>
+                        <li class="nav-li"><a href="#contact-sec">დაგვიკავშირდით</a></li>
                     </ul>
                 </nav>
                 <div>
@@ -57,7 +58,7 @@
                </div>
            </div> 
         </section> 
-        <section class="advantage-section">
+        <section class="advantage-section" id="advantage-sec">
             <div class="advantage-wrapper d-flex jc-space-around">
                 <div class="advantage-box">
                     <img class="desk-img" src="img/desktop.png" alt="pic">
@@ -86,7 +87,7 @@
                 </div>
             </div>
         </section>
-        <section class="function-section">
+        <section class="function-section" id="func-sec">
             <div class="function-wrapper d-flex jc-space-around">
                 <div class="function-box">
                     <h1>სისტემის ფუნქციონალი</h1>
@@ -108,7 +109,7 @@
                 </div>
             </div>
         </section> 
-        <section class="contact-section relative">
+        <section class="contact-section relative" id="contact-sec">
             <div class="contact-wrapper d-flex jc-space-between">
                 <div class="contact-box">
                     <h1>დაგვიკავშირდით</h1>
@@ -147,9 +148,9 @@
                 </ul>
             </div>
             <div>
-                <span class="burger footer-burger"></span>
-                <span class="burger footer-burger"></span>
-                <span class="burger footer-burger"></span>
+                <span class=" footer-burger"></span>
+                <span class=" footer-burger"></span>
+                <span class=" footer-burger"></span>
             </div>
         </div>
     </div>
@@ -160,7 +161,7 @@
 
 
 </section>
-
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/main.js"></script>    
 </body>
 </html>

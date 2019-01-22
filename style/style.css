@@ -173,6 +173,7 @@ html {
   top: 0;
   z-index: 999; }
 
+.footer-burger,
 .burger {
   content: "";
   width: 25px;
@@ -183,6 +184,7 @@ html {
   border-radius: 4px;
   size: 30px; }
 
+.footer-burger:last-child,
 .burger:last-child {
   margin-bottom: 0px; }
 
@@ -198,6 +200,28 @@ html {
 body {
   background: #dce3e6; }
 
+.gotop {
+  display: none;
+  height: 50px;
+  width: 50px;
+  background: green;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50px;
+  z-index: 25;
+  line-height: 1.7;
+  text-align: center;
+  font-size: 24px;
+  padding: 5px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.active {
+  color: #445bfd !important;
+  text-decoration: underline !important; }
+
 .container {
   background: #ffffff;
   border-radius: 10px; }
@@ -206,12 +230,16 @@ body {
   padding: 35px; }
 
 .logo-wrapper img {
-  margin-right: 20px; }
+  margin-right: 20px;
+  position: relative;
+  z-index: 201; }
 
 .logo-title h1 {
   font-family: "gothambold1";
   color: #445bfd;
-  font-size: 24px; }
+  font-size: 24px;
+  position: relative;
+  z-index: 201; }
 
 .logo-title p {
   font-family: "libertynusregularwebfont";
@@ -222,7 +250,13 @@ body {
   font-family: "libertymtboldwebfont";
   color: #333333;
   font-size: 16px;
-  padding-right: 40px; }
+  padding-right: 40px;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear; }
+  .nav-li:hover {
+    color: #445bfd;
+    text-decoration: underline; }
   .nav-li:last-child {
     padding-right: 0px; }
 
@@ -459,11 +493,41 @@ body {
   display: none; }
 
 @media screen and (max-width: 1024px) {
+  .gotop {
+    left: 50px; }
   .container {
     padding-left: 20px;
     padding-right: 20px; }
+  .nav-ul {
+    display: block;
+    margin-top: 200px;
+    margin-left: 0 !important; }
+  .nav-li {
+    display: block;
+    padding-left: 0px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff; }
   .nav {
-    display: none; }
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    z-index: 23;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .nav.nav-active {
+      display: block;
+      left: 0; }
+  .footer-burger {
+    cursor: pointer;
+    position: relative;
+    z-index: 200; }
   .contact-wrapper,
   .reserv-wrapper,
   .function-wrapper {
@@ -497,7 +561,10 @@ body {
     justify-content: space-around; }
   .burger {
     display: block;
-    background-color: #dce3e6; }
+    background-color: #dce3e6;
+    position: relative;
+    z-index: 200;
+    cursor: pointer; }
   .footer-nav {
     display: none; }
   .footer-burger {

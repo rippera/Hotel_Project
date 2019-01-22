@@ -1,37 +1,51 @@
-.container{
+.container {
     background: $White;
     border-radius: 10px;
 }
-.navigation{
+
+.navigation {
     padding: 35px;
 }
-.logo-wrapper{
-    img{
+
+.logo-wrapper {
+    img {
         margin-right: 20px;
+        position: relative;
+        z-index: 201;
     }
 }
-.logo-title{
-    h1{
+
+.logo-title {
+    h1 {
         font-family: $GotHamBold1;
         color: $Blue-1;
         font-size: 24px;
+        position: relative;
+        z-index: 201;
     }
-    p{
+
+    p {
         font-family: $LiberNusRegular;
         color: $Gray-2;
         font-size: 12px;
     }
 }
-.nav-li{
+
+.nav-li {
     font-family: $LiberBold;
     color: $Black-2;
     font-size: 16px;
     padding-right: 40px;
-    &:last-child{
+    transition: all .3s linear;
+    &:hover{
+        color: $Blue-1;
+        text-decoration: underline;
+    }
+    &:last-child {
         padding-right: 0px;
     }
 }
 
-.burger{
+.burger {
     display: none;
 }
