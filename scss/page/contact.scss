@@ -1,0 +1,66 @@
+.contact-section{
+    padding-top: 100px;
+}
+.contact-box{
+    padding: 35px;
+    h1{
+    font-family: $LiberBold;
+    font-size: 24px;
+    color: $Blue-1;
+    margin-bottom: 20px;
+    }
+}
+.contact-li{
+    font-family: $LiberNusRegular;
+    font-size: 14px;
+    color: $Gray-3;
+    margin-bottom: 10px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+.contact-form-box{
+    width: em(400);
+    height: em(340);
+    background-color: $Blue-1;
+    border-radius: 20px;
+    right: 45px;
+    bottom: -145px;
+    h1{
+        font-family: $LiberBold;
+        font-size: 24px;
+        color: $White;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+}
+.main-form{
+    padding: 20px;
+    input{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border-style: solid;
+    font-family: $LiberNusRegular;
+    font-size: 14px;
+    color: $Gray-3;
+    padding-left: 20px;
+    }
+    ::-webkit-input-placeholder{
+    font-family: $LiberNusRegular;
+    font-size: 14px;
+    color: $Gray-3;
+    padding: 20px;
+    }
+}
+
+.btn-call{
+    position: absolute;
+    right: 30px;
+    top: 260px;
+}

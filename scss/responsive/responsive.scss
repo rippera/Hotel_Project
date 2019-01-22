@@ -1,0 +1,185 @@
+@media screen and (max-width: 1024px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav{
+        display: none;
+    }
+    .contact-wrapper,
+    .reserv-wrapper,
+    .function-wrapper
+    {
+        flex-direction: column-reverse
+    }
+    .advantage-wrapper{
+        flex-direction: column;
+    }
+    .advantage-box-2{
+        margin-top: 50px;
+        img{
+            display: none;
+        }
+        h1{
+            position: unset;
+            margin-bottom: 20px;
+        }
+    }
+    .advantage-ul{
+        position: unset; 
+    }
+    .function-box{
+        h1{
+            margin-top: 50px;
+        }
+    }
+    .contact-form-box{
+        position: unset;
+    }
+    .contact-form-box{
+        width: em(500);
+        margin-bottom: 20px;
+    }
+    .footer-wrapper{
+        justify-content: space-around;
+    }
+    .burger{
+        display: block;
+        background-color: $Gray-1;
+    }
+    .footer-nav{
+        display: none;
+    }
+    .footer-burger{
+        display: block;
+        background: $Black;
+    }
+}
+
+@media screen and (max-width:570px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .logo-wrapper{
+        img{
+            margin-right: 5px;
+        }
+    }
+    .male-img{
+        max-width: 380px;
+        width: 100%;
+    }
+    .reserv-title{
+        font-size: 0.9em;
+    }
+    .advantage-box{
+        img{
+            width: 320px;
+        }
+    }
+    .function-box,
+    .advantage-box-2{
+        h1{
+            font-size: 28px;
+        }
+    }
+    .advantage-ul{
+        width: em(400);
+    }
+    .function-box{
+        img{
+            width: 400px;
+        }
+    }
+    .contact-form-box{
+        width: 25em;
+    }
+}
+
+@media screen and (max-width:450px){
+    .advantage-ul{
+        width: 20em;
+    }
+    .contact-form-box,
+    .function-box,
+    .advantage-box,
+    .advantage-box-2{
+        h1{
+        font-size: 22px;
+        }
+    }
+    .main-form{
+        input{
+            margin-bottom: 20px;
+        }
+    }
+    .btn-call{
+        position: unset;
+        right: 0px;
+        width: 100%;
+    }
+    .contact-form-box{
+        width: 100%;
+    }
+}
+@media screen and (max-width:375px){
+    .male-img{
+        max-width: 360px;
+        width: 100%;
+    }
+    .reserv-title{
+        font-size: 0.5em;
+        h1{
+            font-size: 18px;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    .call-btn{
+        width: 100%;
+    }
+    .advantage-box{
+        img{
+         width: 100%;  
+        }
+    }
+    .function-box{
+        img{
+        width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:320px){
+    .burger{
+        margin-left: 5px;
+    }
+    .navigation{
+        padding-left: 0px;
+    }
+    .logo-title{
+        p{
+            display: none;
+        }
+    }
+    .advantage-ul{
+        width: 13em;
+    }
+    .contact-box h1,
+    .contact-form-box h1, 
+    .function-box h1, 
+    .advantage-box h1, 
+    .advantage-box-2 h1{
+        font-size: 16px;
+    }
+    .footer-sect{
+        padding: 50px 10px 20px 20px;
+    }
+    .main-form{
+        ::-webkit-input-placeholder{
+            padding-left: 0px;
+        }
+    }
+}

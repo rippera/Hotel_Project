@@ -1,0 +1,67 @@
+.advantage-wrapper{
+    padding-top: 100px;
+}
+.advantage-box{
+    img{
+        width: 340px;
+    }
+}
+.advantage-box-2{
+    max-width: 630px;
+    h1{
+        position: absolute;
+        right: 85px;
+        top: 85px;
+        font-family: $LiberBold;
+        font-size: 35px;
+        color: $Blue-1;
+    }
+}
+.advantage-ul{
+    position: absolute;
+    right: 35px;
+    bottom: 85px;
+    width: em(450);
+}
+.advantage-li{
+    font-family: $LiberNusRegular;
+    font-size: 14px;
+    color: $Gray-3;
+    margin-bottom: 10px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+    &::before{
+        content: "•"; 
+        color: $Blue-1;
+        margin-right: 5px;
+    }
+}
+.bg-img{
+    width: 100%;
+}
+
+.plus-red{
+    top: 130px;
+    left: 12px;
+}
+.circle-red{
+    top: 175px;
+    left: 40px;
+}
+.plus-blue{
+    top: 30px;
+    right: 215px;
+}
+.circle-blue{
+    top: 15px;
+    right: 185px;
+}
+.plus-blue1{
+    bottom: 120px;
+    left: 45px;
+}
+.circle-blue1{
+    bottom: 40px;
+    left: 100px;
+}

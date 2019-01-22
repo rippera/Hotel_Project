@@ -1,0 +1,23 @@
+.footer-sect{
+    padding: 50px 0 20px 60px;
+}
+.footer-logo{
+    img{
+        margin-right: 20px;
+    }
+}
+.footer-ul{
+    margin-top: 20px;
+}
+.footer-li{
+    font-family: $LiberBold;
+    color: $Black-2;
+    font-size: 16px;
+    padding-right: 40px;
+    &:last-child{
+        padding-right: 0px;
+    }
+}
+.footer-burger{
+    display: none;
+}

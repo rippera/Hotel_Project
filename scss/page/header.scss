@@ -1,0 +1,37 @@
+.container{
+    background: $White;
+    border-radius: 10px;
+}
+.navigation{
+    padding: 35px;
+}
+.logo-wrapper{
+    img{
+        margin-right: 20px;
+    }
+}
+.logo-title{
+    h1{
+        font-family: $GotHamBold1;
+        color: $Blue-1;
+        font-size: 24px;
+    }
+    p{
+        font-family: $LiberNusRegular;
+        color: $Gray-2;
+        font-size: 12px;
+    }
+}
+.nav-li{
+    font-family: $LiberBold;
+    color: $Black-2;
+    font-size: 16px;
+    padding-right: 40px;
+    &:last-child{
+        padding-right: 0px;
+    }
+}
+
+.burger{
+    display: none;
+}

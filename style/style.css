@@ -1,0 +1,582 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul, li {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'gothambold1';
+  src: url("../fonts/gothambold1/gothambold1.eot");
+  src: url("../fonts/gothambold1/gothambold1.eot") format("embedded-opentype"), url("../fonts/gothambold1/gothambold1.woff2") format("woff2"), url("../fonts/gothambold1/gothambold1.woff") format("woff"), url("../fonts/gothambold1/gothambold1.ttf") format("truetype"), url("../fonts/gothambold1/gothambold1.svg#gothambold1") format("svg"); }
+
+@font-face {
+  font-family: 'GothaProBol';
+  src: url("../fonts/GothaProBol/GothaProBol.eot");
+  src: url("../fonts/GothaProBol/GothaProBol.eot") format("embedded-opentype"), url("../fonts/GothaProBol/GothaProBol.woff2") format("woff2"), url("../fonts/GothaProBol/GothaProBol.woff") format("woff"), url("../fonts/GothaProBol/GothaProBol.ttf") format("truetype"), url("../fonts/GothaProBol/GothaProBol.svg#GothaProBol") format("svg"); }
+
+@font-face {
+  font-family: 'libertymtboldwebfont';
+  src: url("../fonts/libertymtboldwebfont/libertymtboldwebfont.eot");
+  src: url("../fonts/libertymtboldwebfont/libertymtboldwebfont.eot") format("embedded-opentype"), url("../fonts/libertymtboldwebfont/libertymtboldwebfont.woff2") format("woff2"), url("../fonts/libertymtboldwebfont/libertymtboldwebfont.woff") format("woff"), url("../fonts/libertymtboldwebfont/libertymtboldwebfont.ttf") format("truetype"), url("../fonts/libertymtboldwebfont/libertymtboldwebfont.svg#libertymtboldwebfont") format("svg"); }
+
+@font-face {
+  font-family: 'libertymtmediumwebfont';
+  src: url("../fonts/libertymtmediumwebfont/libertymtmediumwebfont.eot");
+  src: url("../fonts/libertymtmediumwebfont/libertymtmediumwebfont.eot") format("embedded-opentype"), url("../fonts/libertymtmediumwebfont/libertymtmediumwebfont.woff2") format("woff2"), url("../fonts/libertymtmediumwebfont/libertymtmediumwebfont.woff") format("woff"), url("../fonts/libertymtmediumwebfont/libertymtmediumwebfont.ttf") format("truetype"), url("../fonts/libertymtmediumwebfont/libertymtmediumwebfont.svg#libertymtmediumwebfont") format("svg"); }
+
+@font-face {
+  font-family: 'libertynusmediumwebfont';
+  src: url("../fonts/libertynusmediumwebfont/libertynusmediumwebfont.eot");
+  src: url("../fonts/libertynusmediumwebfont/libertynusmediumwebfont.eot") format("embedded-opentype"), url("../fonts/libertynusmediumwebfont/libertynusmediumwebfont.woff2") format("woff2"), url("../fonts/libertynusmediumwebfont/libertynusmediumwebfont.woff") format("woff"), url("../fonts/libertynusmediumwebfont/libertynusmediumwebfont.ttf") format("truetype"), url("../fonts/libertynusmediumwebfont/libertynusmediumwebfont.svg#libertynusmediumwebfont") format("svg"); }
+
+@font-face {
+  font-family: 'libertynusregularwebfont';
+  src: url("../fonts/libertynusregularwebfont/libertynusregularwebfont.eot");
+  src: url("../fonts/libertynusregularwebfont/libertynusregularwebfont.eot") format("embedded-opentype"), url("../fonts/libertynusregularwebfont/libertynusregularwebfont.woff2") format("woff2"), url("../fonts/libertynusregularwebfont/libertynusregularwebfont.woff") format("woff"), url("../fonts/libertynusregularwebfont/libertynusregularwebfont.ttf") format("truetype"), url("../fonts/libertynusregularwebfont/libertynusregularwebfont.svg#libertynusregularwebfont") format("svg"); }
+
+html {
+  scroll-behavior: smooth; }
+
+/*DISPLAY FLEX*/
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.align-items {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.jc-space-between {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.jc-space-around {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.d-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.d-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  flex-direction: column; }
+
+.df-Wcol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+/*DISPLAY FLEX*/
+/*MAIN BASSE CLASS*/
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  display: block; }
+
+.text-center {
+  text-align: center; }
+
+.inline-block {
+  display: inline-block;
+  vertical-align: middle; }
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.header-fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999; }
+
+.burger {
+  content: "";
+  width: 25px;
+  height: 4px;
+  display: block;
+  background-color: #000000;
+  margin-bottom: 3px;
+  border-radius: 4px;
+  size: 30px; }
+
+.burger:last-child {
+  margin-bottom: 0px; }
+
+.show {
+  display: block !important; }
+
+.hidden {
+  display: none; }
+
+.main-section {
+  padding: 50px 0; }
+
+body {
+  background: #dce3e6; }
+
+.container {
+  background: #ffffff;
+  border-radius: 10px; }
+
+.navigation {
+  padding: 35px; }
+
+.logo-wrapper img {
+  margin-right: 20px; }
+
+.logo-title h1 {
+  font-family: "gothambold1";
+  color: #445bfd;
+  font-size: 24px; }
+
+.logo-title p {
+  font-family: "libertynusregularwebfont";
+  color: #5f707d;
+  font-size: 12px; }
+
+.nav-li {
+  font-family: "libertymtboldwebfont";
+  color: #333333;
+  font-size: 16px;
+  padding-right: 40px; }
+  .nav-li:last-child {
+    padding-right: 0px; }
+
+.burger {
+  display: none; }
+
+.reserv-title {
+  width: 26.25em; }
+  .reserv-title h1 {
+    font-family: "libertymtboldwebfont";
+    color: #445bfd;
+    margin-bottom: 35px; }
+  .reserv-title p {
+    font-family: "libertynusregularwebfont";
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 45px;
+    line-height: 1.4; }
+  .reserv-title h3 {
+    font-family: "libertynusregularwebfont";
+    color: #999999;
+    font-size: 14px; }
+
+.call-btn {
+  border: none;
+  outline: none;
+  background-color: #445bfd;
+  border-radius: 50px;
+  width: 200px;
+  height: 50px;
+  font-family: "libertymtboldwebfont";
+  font-size: 15px;
+  color: #ffffff;
+  background: #00aff1;
+  margin-bottom: 45px;
+  -webkit-box-shadow: 1px 4px 3px #00aff1;
+  box-shadow: 1px 4px 3px #00aff1;
+  cursor: pointer; }
+
+.male-img {
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  z-index: 2; }
+
+.b-img {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+  width: 45px; }
+
+.tripad-img {
+  position: absolute;
+  bottom: 79px;
+  left: 30px;
+  width: 45px;
+  z-index: 3; }
+
+.a-img {
+  position: absolute;
+  top: 25px;
+  right: 22px;
+  width: 45px; }
+
+.h-img {
+  position: absolute;
+  bottom: 105px;
+  right: 0;
+  width: 45px;
+  z-index: 3; }
+
+.advantage-wrapper {
+  padding-top: 100px; }
+
+.advantage-box img {
+  width: 340px; }
+
+.advantage-box-2 {
+  max-width: 630px; }
+  .advantage-box-2 h1 {
+    position: absolute;
+    right: 85px;
+    top: 85px;
+    font-family: "libertymtboldwebfont";
+    font-size: 35px;
+    color: #445bfd; }
+
+.advantage-ul {
+  position: absolute;
+  right: 35px;
+  bottom: 85px;
+  width: 30em; }
+
+.advantage-li {
+  font-family: "libertynusregularwebfont";
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 10px; }
+  .advantage-li:last-child {
+    margin-bottom: 0px; }
+  .advantage-li::before {
+    content: "•";
+    color: #445bfd;
+    margin-right: 5px; }
+
+.bg-img {
+  width: 100%; }
+
+.plus-red {
+  top: 130px;
+  left: 12px; }
+
+.circle-red {
+  top: 175px;
+  left: 40px; }
+
+.plus-blue {
+  top: 30px;
+  right: 215px; }
+
+.circle-blue {
+  top: 15px;
+  right: 185px; }
+
+.plus-blue1 {
+  bottom: 120px;
+  left: 45px; }
+
+.circle-blue1 {
+  bottom: 40px;
+  left: 100px; }
+
+.function-section {
+  padding-top: 120px; }
+
+.function-box img {
+  width: 430px; }
+
+.function-box h1 {
+  font-family: "libertymtboldwebfont";
+  font-size: 35px;
+  color: #445bfd;
+  margin-bottom: 20px; }
+
+.func-li {
+  font-family: "libertynusregularwebfont";
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 10px; }
+  .func-li:last-child {
+    margin-bottom: 0px; }
+  .func-li::before {
+    content: "•";
+    color: #445bfd;
+    margin-right: 5px; }
+
+.contact-section {
+  padding-top: 100px; }
+
+.contact-box {
+  padding: 35px; }
+  .contact-box h1 {
+    font-family: "libertymtboldwebfont";
+    font-size: 24px;
+    color: #445bfd;
+    margin-bottom: 20px; }
+
+.contact-li {
+  font-family: "libertynusregularwebfont";
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 10px; }
+  .contact-li:last-child {
+    margin-bottom: 0px; }
+
+.contact-form-box {
+  width: 26.66667em;
+  height: 22.66667em;
+  background-color: #445bfd;
+  border-radius: 20px;
+  right: 45px;
+  bottom: -145px; }
+  .contact-form-box h1 {
+    font-family: "libertymtboldwebfont";
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px; }
+
+.main-form {
+  padding: 20px; }
+  .main-form input {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border-style: solid;
+    font-family: "libertynusregularwebfont";
+    font-size: 14px;
+    color: #999999;
+    padding-left: 20px; }
+  .main-form ::-webkit-input-placeholder {
+    font-family: "libertynusregularwebfont";
+    font-size: 14px;
+    color: #999999;
+    padding: 20px; }
+
+.btn-call {
+  position: absolute;
+  right: 30px;
+  top: 260px; }
+
+.footer-sect {
+  padding: 50px 0 20px 60px; }
+
+.footer-logo img {
+  margin-right: 20px; }
+
+.footer-ul {
+  margin-top: 20px; }
+
+.footer-li {
+  font-family: "libertymtboldwebfont";
+  color: #333333;
+  font-size: 16px;
+  padding-right: 40px; }
+  .footer-li:last-child {
+    padding-right: 0px; }
+
+.footer-burger {
+  display: none; }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .nav {
+    display: none; }
+  .contact-wrapper,
+  .reserv-wrapper,
+  .function-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+  .advantage-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .advantage-box-2 {
+    margin-top: 50px; }
+    .advantage-box-2 img {
+      display: none; }
+    .advantage-box-2 h1 {
+      position: unset;
+      margin-bottom: 20px; }
+  .advantage-ul {
+    position: unset; }
+  .function-box h1 {
+    margin-top: 50px; }
+  .contact-form-box {
+    position: unset; }
+  .contact-form-box {
+    width: 33.33333em;
+    margin-bottom: 20px; }
+  .footer-wrapper {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .burger {
+    display: block;
+    background-color: #dce3e6; }
+  .footer-nav {
+    display: none; }
+  .footer-burger {
+    display: block;
+    background: #000000; } }
+
+@media screen and (max-width: 570px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .logo-wrapper img {
+    margin-right: 5px; }
+  .male-img {
+    max-width: 380px;
+    width: 100%; }
+  .reserv-title {
+    font-size: 0.9em; }
+  .advantage-box img {
+    width: 320px; }
+  .function-box h1,
+  .advantage-box-2 h1 {
+    font-size: 28px; }
+  .advantage-ul {
+    width: 26.66667em; }
+  .function-box img {
+    width: 400px; }
+  .contact-form-box {
+    width: 25em; } }
+
+@media screen and (max-width: 450px) {
+  .advantage-ul {
+    width: 20em; }
+  .contact-form-box h1,
+  .function-box h1,
+  .advantage-box h1,
+  .advantage-box-2 h1 {
+    font-size: 22px; }
+  .main-form input {
+    margin-bottom: 20px; }
+  .btn-call {
+    position: unset;
+    right: 0px;
+    width: 100%; }
+  .contact-form-box {
+    width: 100%; } }
+
+@media screen and (max-width: 375px) {
+  .male-img {
+    max-width: 360px;
+    width: 100%; }
+  .reserv-title {
+    font-size: 0.5em; }
+    .reserv-title h1 {
+      font-size: 18px; }
+    .reserv-title p {
+      text-align: center; }
+  .call-btn {
+    width: 100%; }
+  .advantage-box img {
+    width: 100%; }
+  .function-box img {
+    width: 100%; } }
+
+@media screen and (max-width: 320px) {
+  .burger {
+    margin-left: 5px; }
+  .navigation {
+    padding-left: 0px; }
+  .logo-title p {
+    display: none; }
+  .advantage-ul {
+    width: 13em; }
+  .contact-box h1,
+  .contact-form-box h1,
+  .function-box h1,
+  .advantage-box h1,
+  .advantage-box-2 h1 {
+    font-size: 16px; }
+  .footer-sect {
+    padding: 50px 10px 20px 20px; }
+  .main-form ::-webkit-input-placeholder {
+    padding-left: 0px; } }

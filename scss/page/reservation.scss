@@ -1,0 +1,68 @@
+.reserv-title{
+    width: em(630,24);
+    h1{
+        font-family: $LiberBold;
+        color: $Blue-1;
+        margin-bottom: 35px;
+    }
+    p{
+        font-family: $LiberNusRegular;
+        font-size: 14px;
+        color: $Gray-3;
+        margin-bottom: 45px;
+        line-height: 1.4;
+    }
+    h3{
+        font-family: $LiberNusRegular;
+        color: $Gray-3;
+        font-size: 14px;
+    }
+}
+.call-btn{
+    border: none;
+    outline: none;
+    background-color: $Blue-1;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    font-family: $LiberBold;
+    font-size: 15px;
+    color: $White;
+    background: $Lblue;
+    margin-bottom: 45px;
+    box-shadow: 1px 4px 3px $Lblue;
+    cursor: pointer;
+}
+
+.male-img{
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.b-img{
+    position: absolute;
+    top: 45px;
+    left: 20px;
+    width: 45px;
+}
+.tripad-img{
+    position: absolute;
+    bottom: 79px;
+    left: 30px;
+    width: 45px;
+    z-index: 3;
+}
+.a-img{
+    position: absolute;
+    top: 25px;
+    right: 22px;
+    width: 45px;
+}
+.h-img{
+    position: absolute;
+    bottom: 105px;
+    right: 0;
+    width: 45px;
+    z-index: 3;
+}
