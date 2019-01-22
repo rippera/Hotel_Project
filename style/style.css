@@ -431,7 +431,7 @@ body {
     font-family: "libertynusregularwebfont";
     font-size: 14px;
     color: #999999;
-    padding: 20px; }
+    padding-left: 20px; }
 
 .btn-call {
   position: absolute;
@@ -502,7 +502,9 @@ body {
     display: none; }
   .footer-burger {
     display: block;
-    background: #000000; } }
+    background: #000000; }
+  .main-form ::-webkit-input-placeholder {
+    padding-left: 0px; } }
 
 @media screen and (max-width: 570px) {
   .container {
@@ -577,6 +579,4 @@ body {
   .advantage-box-2 h1 {
     font-size: 16px; }
   .footer-sect {
-    padding: 50px 10px 20px 20px; }
-  .main-form ::-webkit-input-placeholder {
-    padding-left: 0px; } }
+    padding: 50px 10px 20px 20px; } }
