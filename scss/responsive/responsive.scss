@@ -230,6 +230,33 @@
 }
 
 @media screen and (max-width:320px) {
+    .gotop{
+        padding: 0px;
+        width: 25px;
+        height: 25px;
+        line-height: 1.1;
+        left: 20px;
+    }
+    .b-img{
+        top: 30px;
+        left: 15px;
+        width: 30px;
+    }
+    .tripad-img{
+        position: absolute;
+        bottom: 60px;
+        left: 24px;
+        width: 30px;
+    }
+    .h-img{
+        bottom: 75px;
+        width: 30px;
+    }
+    .a-img{
+        top: 15px;
+        right: 20px;
+        width: 30px;
+    }
     .burger {
         margin-left: 5px;
     }
