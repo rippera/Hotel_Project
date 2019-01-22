@@ -133,6 +133,9 @@
 
     .reserv-title {
         font-size: 0.9em;
+        h3{
+            font-size: 12px;
+        }
     }
 
     .advantage-box {
@@ -160,6 +163,12 @@
 
     .contact-form-box {
         width: 25em;
+    }
+    .contact-box{
+        text-align: center;
+    }
+    .contact-li{
+        font-size: 12px;
     }
 }
 

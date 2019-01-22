@@ -590,6 +590,8 @@ body {
     width: 100%; }
   .reserv-title {
     font-size: 0.9em; }
+    .reserv-title h3 {
+      font-size: 12px; }
   .advantage-box img {
     width: 320px; }
   .function-box h1,
@@ -600,7 +602,11 @@ body {
   .function-box img {
     width: 400px; }
   .contact-form-box {
-    width: 25em; } }
+    width: 25em; }
+  .contact-box {
+    text-align: center; }
+  .contact-li {
+    font-size: 12px; } }
 
 @media screen and (max-width: 450px) {
   .advantage-ul {
