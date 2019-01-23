@@ -606,9 +606,18 @@ body {
   .contact-box {
     text-align: center; }
   .contact-li {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .burger {
+    margin-left: 5px;
+    width: 27px;
+    height: 6px; } }
 
 @media screen and (max-width: 450px) {
+  .h-img {
+    bottom: 90px; }
+  .a-img {
+    top: 19px;
+    right: 20px; }
   .advantage-ul {
     width: 20em; }
   .contact-form-box h1,
@@ -629,6 +638,17 @@ body {
   .male-img {
     max-width: 360px;
     width: 100%; }
+  .tripad-img {
+    bottom: 70px;
+    left: 20px; }
+  .b-img {
+    top: 25px;
+    left: 15px; }
+  .h-img {
+    bottom: 75px; }
+  .a-img {
+    top: 15px;
+    right: 10px; }
   .reserv-title {
     font-size: 0.5em; }
     .reserv-title h1 {
@@ -665,8 +685,6 @@ body {
     top: 15px;
     right: 20px;
     width: 30px; }
-  .burger {
-    margin-left: 5px; }
   .navigation {
     padding-left: 0px; }
   .logo-title p {
