@@ -40,6 +40,7 @@
     &:hover{
         color: $Blue-1;
         text-decoration: underline;
+        transition: all .3s linear;
     }
     &:last-child {
         padding-right: 0px;

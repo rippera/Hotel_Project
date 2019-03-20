@@ -136,8 +136,9 @@ html {
 
 /*DISPLAY FLEX*/
 /*MAIN BASSE CLASS*/
+.footer__container,
 .container {
-  max-width: 1170px;
+  max-width: 1350px;
   width: 100%;
   margin: 0 auto;
   display: block; }
@@ -258,7 +259,10 @@ body {
   transition: all .3s linear; }
   .nav-li:hover {
     color: #445bfd;
-    text-decoration: underline; }
+    text-decoration: underline;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
   .nav-li:last-child {
     padding-right: 0px; }
 
@@ -479,7 +483,7 @@ body {
   top: 260px; }
 
 .footer-sect {
-  padding: 50px 0 20px 60px; }
+  padding: 50px 0 20px 30px; }
 
 .footer-logo img {
   margin-right: 20px; }
